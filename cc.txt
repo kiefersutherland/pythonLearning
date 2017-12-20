@@ -1,7 +1,7 @@
 {
   "ResultCode": 200,
   "ResultInfo": null,
-  "CurTime": "1513740204",
+  "CurTime": "1513749879",
   "Data": [
     {
       "NewsID": "20170324120101543AF6514364A3064F859E8E6F498AD6C909",
