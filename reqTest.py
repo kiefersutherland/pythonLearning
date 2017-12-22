@@ -6,14 +6,14 @@ def fun(m):
     img_tag = m.group()
     src = m.group(1)
     if not src.startswith("http:"):
-        full_src = "http://www.cctv.com" + src
+        full_src = "http://www.icoa.cn" + src
     else:
         full_src = src
     new_img_tag = img_tag.replace(src, full_src)
     return new_img_tag
 
 
-response = requests.get("http://www.hztongbao.com/",  headers={'user-agent':'Mozilla/5.0'})
+response = requests.get("http://www.icoa.cn/a/512.html",  headers={'user-agent':'Mozilla/5.0'})
 # print(response.status_code)
 soup=BeautifulSoup(response.text,"html.parser")
 # print(soup.title)
@@ -40,7 +40,7 @@ print(k)
 args = {"ArticleID": 4}
 #res=requests.get("http://www.hztongbao.com/home/AppArticle",params= args)
 newArgs={"CategoryID":"20170323170634970AD06C08D7BDAF4E76AC9CC2493767C5DC"}
-res=requests.get("http://www.hztongbao.com/app/getArticleList", params=newArgs,timeout=2)
+#res=requests.get("http://www.hztongbao.com/app/getArticleList", params=newArgs,timeout=2)
 #print(res.url)
 #print(res.text)
 
