@@ -3,7 +3,6 @@
 # -*- coding: utf-8 -*-
 from pyquery import PyQuery as pq
 from lxml import etree
-
 for t in range(1,5):
   doc = pq('https://news.cnblogs.com/n/page/'+str(t)+'/')
   #print(doc.html())
