@@ -3,7 +3,7 @@
 
 import xlrd
 import xlwt
-from .mysqlTest import MysqlDB as db
+# from .mysqlTest import MysqlDB as db
 import datetime
 
 #转时间
@@ -61,11 +61,8 @@ def read_xls_data():
      bus+=rowValues[3]
      #print(rowValues)
 
-   db.insert_money(xldate_as_tuple(rowValues[0]),xldate_as_tuple(rowValues[1]),rowValues[2],rowValues[3],str(rowValues[4]))
+   # db.insert_money(xldate_as_tuple(rowValues[0]),xldate_as_tuple(rowValues[1]),rowValues[2],rowValues[3],str(rowValues[4]))
 
-
- # print('\n\n总金额:'+str(cc))
- # print('\n\n公交金额:'+str(bus))
 
 def read_brand_data():
   excelFile = 'E:\最新品牌excel版.xlsx'
@@ -76,8 +73,9 @@ def read_brand_data():
   for i in range(1, 10):
     rowValues = table.row_values(i)  # 某一行数据
     for item in rowValues:
+      pass
      # print(rowValues[0],rowValues[1])
-      db.insert_Brand(rowValues[0],rowValues[1])
+     #  db.insert_Brand(rowValues[0],rowValues[1])
 
 if __name__=='__main__':
    read_brand_data()
