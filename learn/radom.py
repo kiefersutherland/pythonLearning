@@ -13,7 +13,7 @@ filename='text.txt'
 jsonfiLe='test.json'
 strFile=[] 
 y=0
-while y < 100000:
+while y < 1000:
  x = randint(0,6)
  strFile.append(str(x)) 
  y=y+1 
